@@ -1,0 +1,60 @@
+set encoding=utf-8
+
+colorscheme desert
+
+
+" tabs and spaces handling
+set expandtab
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+
+" check spelling 
+:set spell
+
+" always show status bar
+set ls=2
+
+"Auto Indent
+set autoindent
+
+" incremental search
+set incsearch
+" highlighted search results
+set hlsearch
+
+" syntax highlight on
+syntax on
+
+" show line numbers                             
+set nu
+autocmd InsertLeave * :set norelativenumber number
+autocmd InsertEnter * :set relativenumber
+
+" highlight current line & column
+set cursorline
+set cursorcolumn
+
+" navigate windows with meta+arrows
+map <M-Right> <c-w>l
+map <M-Left> <c-w>h
+map <M-Up> <c-w>k
+map <M-Down> <c-w>j
+imap <M-Right> <ESC><c-w>l
+imap <M-Left> <ESC><c-w>h
+imap <M-Up> <ESC><c-w>k
+imap <M-Down> <ESC><c-w>j
+
+" when scrolling, keep cursor 3 lines away from screen border
+set scrolloff=3
+
+
+set splitbelow
+set splitright
+
+" split navigations
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
